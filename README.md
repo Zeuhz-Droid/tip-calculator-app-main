@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt how to structure my javascript codes, as i tried 3 or more times in refactoring my code, not sure i still got the best format, but i know how to go about it when faced with a similar or more tasking challenge. STEP-BY-STEP.
+I learnt how to structure my javascript codes, as i tried 3 or more times in refactoring my codes, not sure i still got the best format, but i know how to go about it when faced with a similar or more tasking challenge. STEP-BY-STEP.
 
 ```html
 <div>

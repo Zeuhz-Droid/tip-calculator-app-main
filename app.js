@@ -121,7 +121,7 @@ btnCustom.addEventListener("input", function (e) {
   getCustomAmount(billInput, btnCustom, noOfPeople);
 });
 
-noOfPeople.addEventListener("input", function (e) {
+noOfPeople.addEventListener("input", function () {
   if (e.srcElement.value != "0") {
     labelText.classList.add("hide");
     labelText.classList.remove("show");
