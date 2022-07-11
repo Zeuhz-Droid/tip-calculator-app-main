@@ -8,6 +8,8 @@ const tipAmount = document.querySelector(".amount--tip");
 const totalAmount = document.querySelector(".amount--total");
 const btnReset = document.querySelector(".btn--reset");
 
+const labelText = document.querySelector(".label--text");
+
 let total,
   tip,
   custom,
@@ -119,21 +121,29 @@ btnCustom.addEventListener("input", function (e) {
   getCustomAmount(billInput, btnCustom, noOfPeople);
 });
 
-noOfPeople.addEventListener("input", function () {
-  getTipPerPerson(billInput, radioBtns, noOfPeople);
-  getTotalPerPerson(billInput, radioBtns, noOfPeople);
-  //   getCustomAmount(billInput, btnCustom, noOfPeople);
+noOfPeople.addEventListener("input", function (e) {
+  if (e.srcElement.value != "0") {
+    labelText.classList.add("hide");
+    labelText.classList.remove("show");
+    getTipPerPerson(billInput, radioBtns, noOfPeople);
+    getTotalPerPerson(billInput, radioBtns, noOfPeople);
+    //   getCustomAmount(billInput, btnCustom, noOfPeople);
 
-  if (billInput.value && isChecked) {
-    tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
-    totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
-  } else if (billInput && !isChecked && btnCustom.children[0].value) {
-    getCustomAmount(billInput, btnCustom, noOfPeople);
-    tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
-    totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
-  } else {
-    tipAmount.textContent = "$0.00";
-    totalAmount.textContent = "$0.00";
+    if (billInput.value && isChecked) {
+      tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
+      totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
+    } else if (billInput && !isChecked && btnCustom.children[0].value) {
+      getCustomAmount(billInput, btnCustom, noOfPeople);
+      tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
+      totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
+    } else {
+      tipAmount.textContent = "$0.00";
+      totalAmount.textContent = "$0.00";
+    }
+  }
+  if (e.srcElement.value == "0") {
+    labelText.classList.remove("hide");
+    labelText.classList.add("show");
   }
 });
 
