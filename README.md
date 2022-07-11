@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution codes](https://github.com/Zeuhz-Droid/intro-section-with-dropdown-navigation-main)
-- Live Site URL: [Hosted Github site](https://zeuhz-droid.github.io/intro-section-with-dropdown-navigation-main/)
+- Solution URL: [Solution codes](https://github.com/Zeuhz-Droid/tip-calculator-app-main)
+- Live Site URL: [Hosted Github site](https://zeuhz-droid.github.io/tip-calculator-app-main/)
 
 ## My process
 
