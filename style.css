@@ -41,15 +41,15 @@ body {
 
 /* STYLES FOR THE HEAD SECTION */
 .heading--1 {
-  font-size: xx-large;
-  color: var(--very-dark-cyan);
+  font-size: x-large;
+  color: var(--dark-grayish-cyan);
   letter-spacing: 1rem;
   text-transform: uppercase;
 }
 
 /* STYLES FOR THE MAIN SECTION */
 #pass-main {
-  width: 60vw;
+  width: 70vw;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 2rem;
