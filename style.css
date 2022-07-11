@@ -54,6 +54,7 @@ body {
   padding: 3rem;
   border-radius: 2rem;
   background-color: var(--white);
+  box-shadow: 0 1rem 3rem -1rem var(--dark-grayish-cyan);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -279,15 +280,14 @@ body {
 
 .btn--reset {
   text-transform: uppercase;
-  color: var(--very-dark-cyan);
-  background-color: var(--strong-cyan);
+  color: var(--dark-grayish-cyan);
+  background-color: rgba(7, 36, 38, 0.4);
   transition: all 0.2s;
 }
 
 .btn--reset:active,
 .btn--reset:hover {
   color: var(--white);
-  background-color: var(--stronger-cyan);
 }
 
 /* END */
@@ -343,5 +343,18 @@ body {
 
   .amount__box {
     gap: 2rem;
+  }
+
+  .btn--reset {
+    text-transform: uppercase;
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    transition: all 0.2s;
+  }
+
+  .btn--reset:active,
+  .btn--reset:hover {
+    color: var(--white);
+    background-color: var(--stronger-cyan);
   }
 }
