@@ -122,8 +122,8 @@ btnCustom.addEventListener("input", function (e) {
 });
 
 noOfPeople.addEventListener("input", function () {
- if (e.data != "0") {
-   labelText.classList.add('hide')
+ if (e.srcElement.value != "0") {
+    labelText.classList.add('hide')
     labelText.classList.remove('show')
     getTipPerPerson(billInput, radioBtns, noOfPeople);
     getTotalPerPerson(billInput, radioBtns, noOfPeople);
@@ -141,7 +141,7 @@ noOfPeople.addEventListener("input", function () {
       totalAmount.textContent = "$0.00";
     }
   }
-  if (e.data == '0') {
+  if (e.srcElement.value == '0') {
     labelText.classList.remove('hide')
     labelText.classList.add('show')
   }
