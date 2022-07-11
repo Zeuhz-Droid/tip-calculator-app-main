@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- LINK TO FONT STYLES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GENERAL STYLES PATH LINK -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="pass-head">
+        <h1 class="heading--1">
+          spli <br />
+          tter
+        </h1>
+      </header>
+
+      <main id="pass-main">
+        <div class="bill__box">
+          <div class="bill">
+            <label for="bill" class="label bill--text">
+              <span>Bill</span>
+              <span class="hide" id="bill">Must be more than zero</span>
+            </label>
+            <input
+              type="number"
+              name="amount"
+              id="bill"
+              class="input bill--input"
+              placeholder="0"
+            />
+            <img
+              src="images/icon-dollar.svg"
+              alt="dollar icon"
+              class="svg svg--pos"
+            />
+          </div>
+
+          <div class="tip-box">
+            <p class="label tip--text">Select tip %</p>
+            <div class="tip">
+              <div>
+                <label for="five" class="tip--btn">
+                  <input
+                    type="radio"
+                    id="five"
+                    name="tip"
+                    value="5"
+                    class="tip--input"
+                  />
+                  <span class="tip--percent">5%</span>
+                </label>
+              </div>
+              <div>
+                <label for="ten" class="tip--btn">
+                  <input
+                    type="radio"
+                    id="ten"
+                    name="tip"
+                    value="10"
+                    class="tip--input"
+                  />
+                  <span class="tip--percent">10%</span>
+                </label>
+              </div>
+              <div>
+                <label for="fifteen" class="tip--btn">
+                  <input
+                    type="radio"
+                    id="fifteen"
+                    name="tip"
+                    value="15"
+                    class="tip--input"
+                  />
+                  <span class="tip--percent">15%</span>
+                </label>
+              </div>
+              <div>
+                <label for="twenty-five" class="tip--btn">
+                  <input
+                    type="radio"
+                    id="twenty-five"
+                    name="tip"
+                    value="25"
+                    class="tip--input"
+                  />
+                  <span class="tip--percent">25%</span>
+                </label>
+              </div>
+              <div>
+                <label for="fifty" class="tip--btn">
+                  <input
+                    type="radio"
+                    id="fifty"
+                    name="tip"
+                    value="50"
+                    class="tip--input"
+                  />
+                  <span class="tip--percent">50%</span>
+                </label>
+              </div>
+              <div>
+                <label for="custom" class="tip--btn btn-custom">
+                  <input
+                    type="number"
+                    min="1"
+                    max="100"
+                    id="custom"
+                    value=""
+                    class="tip--custom"
+                    name="tip"
+                    placeholder="Custom"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="people">
+              <label class="label people--num">
+                <span>number of People</span>
+                <span class="hide" id="num">Must be more than zero</span>
+              </label>
+              <input
+                type="number"
+                class="input people--input"
+                name="no-of-people"
+                placeholder="0"
+              />
+              <img
+                src="images/icon-person.svg"
+                alt="person icon"
+                class="svg svg--pos"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="amount">
+          <div class="amount__box">
+            <div class="amount__wrapper">
+              <div>
+                <p class="amount--heading">Tip amount</p>
+                <span class="amount--text">/ person</span>
+              </div>
+              <div class="amount--cash">
+                <span class="amount--tip">$0.00</span>
+              </div>
+            </div>
+            <div class="amount__wrapper">
+              <div>
+                <p class="amount--heading">Total</p>
+                <span class="amount--text">/ person</span>
+              </div>
+              <div class="amount--cash">
+                <span class="amount--total">$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn--reset">Reset</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- ATTRIBUTION SECTION -->
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Zeuhz-Droid">Zeuhz Droid</a>.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
