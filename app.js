@@ -8,7 +8,7 @@ const tipAmount = document.querySelector(".amount--tip");
 const totalAmount = document.querySelector(".amount--total");
 const btnReset = document.querySelector(".btn--reset");
 
-const labelText = document.querySelector('.label--text');
+const labelText = document.querySelector(".label--text");
 
 let total,
   tip,
@@ -141,7 +141,7 @@ noOfPeople.addEventListener("input", function () {
       totalAmount.textContent = "$0.00";
     }
   }
-  if (e.srcElement.value == '0') {
+  if (e.srcElement.value == "0") {
     labelText.classList.remove('hide')
     labelText.classList.add('show')
   }
