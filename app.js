@@ -8,9 +8,6 @@ const tipAmount = document.querySelector(".amount--tip");
 const totalAmount = document.querySelector(".amount--total");
 const btnReset = document.querySelector(".btn--reset");
 
-const spanBlink1 = document.querySelector("#bill");
-const spanBlink2 = document.querySelector("#num");
-
 let total,
   tip,
   custom,
@@ -37,11 +34,6 @@ const init = function () {
 };
 
 btnReset.addEventListener("click", init);
-
-// if (noOfPeople.value < 0) {
-//   spanBlink2.classList.remove(".hide");
-//   spanBlink2.classList.add(".show");
-// }
 
 const getTip = function (bill, btns) {
   btns.forEach((btn) => {
