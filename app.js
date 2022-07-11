@@ -123,6 +123,8 @@ btnCustom.addEventListener("input", function (e) {
 
 noOfPeople.addEventListener("input", function () {
  if (e.data != "0") {
+   labelText.classList.add('hide')
+    labelText.classList.remove('show')
     getTipPerPerson(billInput, radioBtns, noOfPeople);
     getTotalPerPerson(billInput, radioBtns, noOfPeople);
     //   getCustomAmount(billInput, btnCustom, noOfPeople);
