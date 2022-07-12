@@ -21,11 +21,18 @@ This is a solution to the [tip and calculator challenge on Frontend Mentor](http
 
 ### The challenge
 
-Users should be able to:
+Your challenge is to build out this calculator app and get it looking as close to the design as possible.
 
-- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+The tip-calculator demo app can be used for businesses e.g restaurant, having paying customers. The app collects 3 customer
+spending info
+
+- Their bill for a particular service
+- Tips, if they will, at a percentage to their bills
+- and the number of people sorting the bill.
+
+It then returns the Amount of Tip payable per person and the Total amount payable per person.
 
 ### Screenshot
 
