@@ -39,11 +39,12 @@
           <div class="bill">
             <label for="bill" class="label bill--text">
               <span>Bill</span>
-              <span>Must be more than zero</span>
             </label>
             <input
               type="number"
               name="amount"
+              min="1"
+              max="infinity"
               id="bill"
               class="input bill--input"
               placeholder="0"
@@ -140,6 +141,8 @@
               </label>
               <input
                 type="number"
+                min="1"
+                max="infinity"
                 class="input people--input"
                 name="no-of-people"
                 placeholder="0"

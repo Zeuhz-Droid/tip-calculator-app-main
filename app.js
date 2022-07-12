@@ -123,7 +123,7 @@ btnCustom.addEventListener("input", function (e) {
 
 noOfPeople.addEventListener("input", function (e) {
   console.log(e.srcElement.value);
-  if (+e.srcElement.value !== 0) {
+  if (+e.srcElement.value !== 0 && +e.srcElement.value !== "") {
     labelText.classList.add("hide");
     labelText.classList.remove("show");
     getTipPerPerson(billInput, radioBtns, noOfPeople);
