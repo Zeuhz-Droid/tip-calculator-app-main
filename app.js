@@ -142,7 +142,7 @@ noOfPeople.addEventListener("input", function (e) {
       totalAmount.textContent = "$0.00";
     }
   }
-  if (+e.srcElement.value === 0) {
+  if (+e.srcElement.value == 0) {
     labelText.classList.remove("hide");
     labelText.classList.add("show");
   }
