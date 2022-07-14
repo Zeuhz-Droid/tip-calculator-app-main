@@ -98,7 +98,6 @@ radioBtns.forEach((btn) => {
       tipAmount.textContent = "$0.00";
       totalAmount.textContent = "$0.00";
     }
-    // isChecked = false;
   });
 });
 
@@ -129,7 +128,6 @@ noOfPeople.addEventListener("input", function (e) {
     labelText.classList.remove("show");
     getTipPerPerson(billInput, radioBtns, noOfPeople);
     getTotalPerPerson(billInput, radioBtns, noOfPeople);
-    //   getCustomAmount(billInput, btnCustom, noOfPeople);
 
     if (billInput.value && isChecked) {
       tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
