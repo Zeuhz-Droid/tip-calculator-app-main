@@ -118,12 +118,13 @@ const getCustomAmount = function (bill, btn, num) {
 
 btnCustom.addEventListener("input", function (e) {
   isChecked = false;
-  getCustomAmount(billInput, btnCustom, noOfPeople);
+  if (e.srcElement.valueAsNumber > 0) {
+    getCustomAmount(billInput, btnCustom, noOfPeople);
+  }
 });
 
 noOfPeople.addEventListener("input", function (e) {
-  console.log(e.srcElement.value);
-  if (+e.srcElement.value !== 0 && +e.srcElement.value !== "") {
+  if (e.srcElement.valueAsNumber !== 0 && e.srcElement.value !== "") {
     labelText.classList.add("hide");
     labelText.classList.remove("show");
     getTipPerPerson(billInput, radioBtns, noOfPeople);
@@ -142,7 +143,7 @@ noOfPeople.addEventListener("input", function (e) {
       totalAmount.textContent = "$0.00";
     }
   }
-  if (+e.srcElement.value === 0) {
+  if (e.srcElement.valueAsNumber === 0) {
     labelText.classList.remove("hide");
     labelText.classList.add("show");
   }
