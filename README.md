@@ -1,6 +1,6 @@
-Frontend Mentor - Intro section with dropdown navigation solution
+Frontend Mentor - Calculator app solution
 
-This is a solution to the [tip and calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5).
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
 
 ## Table of contents
 
