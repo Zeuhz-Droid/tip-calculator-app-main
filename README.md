@@ -22,9 +22,10 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### The challenge
 
-Your challenge is to build out this calculator app and get it looking as close to the design as possible.
+The challenge is to build out this calculator app and get it looking as close to the design as possible.
+--check the link appended at the top.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+---
 
 The tip-calculator demo app can be used for businesses e.g restaurant, having paying customers. The app collects 3 customer
 spending info
