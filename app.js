@@ -136,8 +136,6 @@ noOfPeople.addEventListener("input", function (e) {
       totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
     } else if (billInput.value && !isChecked && btnCustom.children[0].value) {
       getCustomAmount(billInput, btnCustom, noOfPeople);
-      tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
-      totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
     } else {
       tipAmount.textContent = "$0.00";
       totalAmount.textContent = "$0.00";
