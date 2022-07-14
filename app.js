@@ -133,7 +133,7 @@ noOfPeople.addEventListener("input", function (e) {
     if (billInput.value && isChecked) {
       tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
       totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
-    } else if (billInput && !isChecked && btnCustom.children[0].value) {
+    } else if (billInput.value && !isChecked && btnCustom.children[0].value) {
       getCustomAmount(billInput, btnCustom, noOfPeople);
       tipAmount.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
       totalAmount.textContent = `$${totalAmountPerPerson.toFixed(2)}`;
